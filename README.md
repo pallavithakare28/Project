@@ -13,8 +13,8 @@ The customer can contact them and share their Location with the Mechanic via mes
 ## How I built it
 I have made the FrontEnd using HTML, CSS, Bootstrap. More information is given in my readme file (Github).
 
-## Challenges we ran into
-As it's totally free of cost service. The site will not ask for any payment. As customer and Mechanic, both are finally going to meet face to face which helps them to get a payment directly. or Even Mechanic can ask for some money before going.
+## Challenges I ran into
+Details about different categories.
 
 ## Accomplishments that I'm proud of
 I'm proud of making a solution that helps to make their business presence, as well as Customer, can get their help nearby them. 
