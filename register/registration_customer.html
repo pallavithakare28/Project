@@ -1,0 +1,169 @@
+<html>
+
+<head>
+  <title>Registration Form for Customer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/home.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <a href="../home.html"><img src="../images/logo.png" class="logo" alt="image" width="100px" height="50px"></a>
+
+  <div class="topnav" id="myTopnav">
+
+    <a href="../mechanicForAll.html"><b>Mechanic For All</b></a>
+    <a href="../sparePartSeller.html"><b>Spare Part Seller</b></a>
+    <a href="../petrolPump.html"><b>Petrol Pump</b></a>
+    <a href="../login.html" class="active"><b>Login</b></a>
+    <div class="dropdown">
+      <button class="dropbtn active"><b>Register</b>
+        <i class="fa fa-caret-down active"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="registration_customer.html">As a Customer</a>
+        <a href="registration_service.html">As an Service Provider</a>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <hr>
+
+  <h5 style="text-align:center">Registration for Customer</h5>
+  <!-- Form start -->
+  <form class="center">
+    <table border='1' width='100%' cellpadding='7' cellspacing='0'>
+      <!-- <thead>
+        <tr>
+          <th colspan='2'>Registration for Customer</th>
+          
+        </tr>
+      </thead> -->
+      <hr>
+      <tbody>
+        
+        <tr>
+          <td width='32%'>Customer Name</td>
+          <td>
+            <input type='text' oncopy="javascript:return false;" oncut="javascript:return false;" id='regCustomername'
+              required pattern="[a-zA-Z .]{1,30}" name='Customername' title='Min 1 Char With Alphabets Allowed' value=''
+              placeholder='Enter your name' />
+          </td>
+        </tr>
+
+        <tr>
+          <td width='32%'>Mobile Number</td>
+          <td>
+            <input type='text' id='regMobileno' required pattern="[0-9 .]{10}" name='Mobileno'
+              title=' Only 10 digits are Allowed' value='' placeholder='Enter Mobile no.' />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Address</td>
+          <td>
+            <textarea rows='5' onpaste="javascript:return false;" name='Addr' id='regAddr' cols='25'
+              placeholder='Enter Address'></textarea>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td width='32%'>City</td>
+          <td>
+            <input type='text' id='regCity' required pattern="[a-zA-Z .]{4,30}" name='City'
+              title='Min 4 Char With Alphabets Allowed' value='' placeholder='Enter City' />
+          </td>
+        </tr>
+
+        <tr>
+          <td>State</td>
+          <td>
+            <select name='State' id='regState'>
+              <option value='' selected>Select State</option>
+              <option value='AP'>Andhra Pradesh</option>
+              <option value='ArP'>Arunachal Pradesh</option>
+              <option value='As'>Assam</option>
+              <option value='B'>Bihar</option>
+              <option value=''>Chhattisgarh</option>
+              <option value=''>Goa</option>
+              <option value=''>Gujarat</option>
+              <option value=''>Haryana</option>
+              <option value=''>Himachal Pradesh</option>
+              <option value=''>Jharkhand</option>
+              <option value=''>Karnataka</option>
+              <option value=''>Kerala</option>
+              <option value=''>Madhya Pradesh</option>
+              <option value=''>Maharashtra</option>
+              <option value=''>Manipur</option>
+              <option value=''>Meghalaya</option>
+              <option value=''>Mizoram</option>
+              <option value=''>Nagaland</option>
+              <option value=''>Odisha</option>
+              <option value=''>Punjab</option>
+              <option value=''>Rajasthan</option>
+              <option value=''>Sikkim</option>
+              <option value=''>Tamil Nadu</option>
+              <option value=''>Telangana</option>
+              <option value=''>Tripura</option>
+              <option value=''>Uttar Pradesh</option>
+              <option value=''>Uttarakhand</option>
+              <option value=''>West Bengal</option>
+            </select>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td width='32%'>Pin code</td>
+          <td>
+            <input type='text' id='regPinno' required pattern="[0-9 .]{6}" name='Pinno'
+              title='Only 6 digits are Allowed' value='' placeholder='Enter Pin code' />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Upload Your Photo</td>
+          <td>
+            <input type='file' id='regPic' accept="image/*" name='pic' />
+          </td>
+        </tr>
+      </tbody>
+
+
+      <tfoot>
+        <tr>
+          <td colspan='2' align='center'>
+            <button class="btn btn-primary" type="submit"> Submit </button>
+            <button class="btn btn-danger" type="cancel"> Cancel</button>
+          </td>
+        </tr>
+        <tr>
+          <td colspan='2' align='center'>
+            <div class="container signin">
+              <p>Already have an account? <a href="../login.html">Log in</a>.</p>
+            </div>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </form><br><br><br>
+
+  <footer>
+    <p style="text-align: center; background-color: #484848; font-size: 16px; color: #ffffff; height: 30px;">
+      <b>COPYRIGHT- Future24x7 Ecom & Media Solution</b>
+    <p>
+  </footer>
+</body>
+
+</html>
+<pre>
+</pre>
